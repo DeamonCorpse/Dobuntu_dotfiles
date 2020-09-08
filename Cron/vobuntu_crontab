@@ -1,0 +1,19 @@
+####################### DOBUNTU CRONTAB V 1.0 #######################
+# CRON JOB FORMAT
+# MIN | HR | DAY OF THE MONTH | MONTH | DAY OF THE WEEK | COMMAND
+# 0-59 | 0-23 | 1-31 | 1-12 / jan - dec | 0 (Sunday) - 7 / mon - fri |
+#
+# VERSION HISTORY
+# V 1.0 (Initial) - Getting started
+
+
+# Weekly SYSTEM UPDATES
+MAILTO=s.duf69@icloud.com * 4 * * Thur root (apt update && apt -y upgrade) > /dev/null
+
+
+# DOCKER CLEANUP
+### Delete all unused docker images every Tuesday at 05:00
+0 0 * * 2 /var/snap/docker/common/var-lib-docker image prune -a -f
+
+### Delete all unused docker volumes on the 12th of every month at 04:00
+0 0 12 * * /var/snap/docker/common/var-lib-docker prune -f
