@@ -35,7 +35,7 @@ Thumbs.db                   # MS Windows thumbnails
 
 
 ## Specific Files
-fstab/fstab                       # fstab file located at /etc/fstab
+fstab/fstab
 
 
 # DIRECTORY TYPES
