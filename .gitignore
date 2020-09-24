@@ -48,3 +48,4 @@ fstab/fstab
 .apdisk                      # Potentially created on remote AFP share
 Network Trash Folder         # Potentially created on remote AFP share
 Temporary Items              # Potentially created on remote AFP share
+bash/bookstack-db-backup.sh
